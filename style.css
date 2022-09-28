@@ -1,0 +1,171 @@
+
+/* General Styles */
+*{
+    
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: #0D192C;
+    width: 1440px;
+    height: 900px;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+/* Container Styles */
+.container{
+    background-color: #15263F;
+    width: 350px;
+    height: 596px;
+    padding: 24px;
+    border-radius: 15px;
+}
+
+.container img{
+    width: 302px;
+    height: 302px;
+    border-radius: 8px;
+}
+
+.container h3{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 16px;
+    margin-top: 24px;
+}
+
+.container p{
+    color: #8BACD9;
+    font-size: 18px;
+    margin-top: 16px;
+}
+
+/* Product info styles */
+
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin:24px 0;
+    
+}
+.price{
+    display: flex;
+    align-items: center;
+    
+}
+
+.info .clock{
+    width: 16px;
+    height: 16px;
+    margin-right: 7.7px;
+}
+.info .eth{
+    width: 10px;
+    height: 16px;
+    margin-right: 6px;
+}
+
+.eth-price{
+    color: #00FFF8;
+    font-size: 16px;
+}
+
+.days{
+    display: flex;
+    align-items: center;
+}
+.deadline{
+    color: #8BACD9;
+    font-size: 16px;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #2E405A;
+    margin-bottom: 16px;
+    margin-top: 24px;
+}
+
+/* Profile Styles */
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.profile img{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+}
+
+.span1{
+    color: #8BACD9;
+    font-size: 16px;
+    margin-left: 16px;
+}
+
+.span2{
+    color: white;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+/* Overlay Styles*/
+.view-container{
+    position: relative;
+}
+.view-container .overlay{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.view-container:hover .overlayImg{
+    width: 100%;
+}
+.view-container:hover .view img{
+    display: block;
+}
+
+.view img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+.overlay{
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    background-color: #00FFF8;
+}
+
+.overlayImg{
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+}
+
+
+
+/* Responsive */
+
+@media(max-width:375px){
+    body{
+        width: 100%;
+        height: 667px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
